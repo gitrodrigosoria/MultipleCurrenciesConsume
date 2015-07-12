@@ -1,2 +1,2 @@
 # MultipleCurrenciesConsume
-Project designed to show how consuming project "MultipleCurrencies".
+Project designed to show how consuming the project "MultipleCurrencies".
