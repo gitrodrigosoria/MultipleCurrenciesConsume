@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{9722B898-E4E9-47C8-8844-6727D4D2C2D3}"
+	ProjectSection(SolutionItems) = preProject
+		src\Index.html = src\Index.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "js", "js", "{643F7B65-6B62-4A38-BDBC-8CBC855E5131}"
+	ProjectSection(SolutionItems) = preProject
+		src\js\exchange.js = src\js\exchange.js
+		src\js\jquery.min.js = src\js\jquery.min.js
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{643F7B65-6B62-4A38-BDBC-8CBC855E5131} = {9722B898-E4E9-47C8-8844-6727D4D2C2D3}
+	EndGlobalSection
+EndGlobal
