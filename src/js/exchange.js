@@ -3,7 +3,7 @@ getExchange = function () {
     var urlYql = "http://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20yahoo.finance.xchange%20where%20pair%3D%22EURBRL%22&"
             + "format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys";
 
-    var urlApi = "http://www.rodrigosoria.com.br/Service.ashx"
+    var urlApi = "http://rodrigosoriabr-001-site1.etempurl.com/Service.ashx"
 
     var euro, euro_iof, agk, spmundi;
 
@@ -18,8 +18,8 @@ getExchange = function () {
 
         $.getJSON(urlApi, function (d) {
 
-            agk = d.Cotacao[0].AGK[0][5].value.substring(0, 4).replace(',', '.');
-            spmundi = d.Cotacao[1].SPMUNDI[0][6].value.replace(',', '.');
+            agk = d.Cotacao[0].AGK[0][5].Value.substring(0, 4).replace(',', '.');
+            spmundi = d.Cotacao[1].SPMUNDI[0][6].Value.replace(',', '.');
 
             $('#agk_euro_value').html(
                 "AGK: " + agk +
