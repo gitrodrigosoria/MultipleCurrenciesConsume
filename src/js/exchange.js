@@ -18,8 +18,8 @@ getExchange = function () {
 
         $.getJSON(urlApi, function (d) {
 
-            agk = d.Cotacao[0].AGK[0][5].Value.substring(0, 4).replace(',', '.');
-            spmundi = d.Cotacao[1].SPMUNDI[0][6].Value.replace(',', '.');
+            agk = d.Cotacao[0].AGK[0][6].Value.substring(0, 4).replace(',', '.');
+            spmundi = d.Cotacao[1].SPMUNDI[0][7].Value.replace(',', '.');
 
             $('#agk_euro_value').html(
                 "AGK: " + agk +
