@@ -10,6 +10,7 @@ getExchange = function () {
     $.getJSON(urlYql, function (d) {
 
         euro = parseFloat(d.query.results.rate.Rate);
+        
         euro_iof = eval(euro + eval(euro * 0.0038));
 
         $('#euro_value').html(
@@ -19,6 +20,7 @@ getExchange = function () {
         $.getJSON(urlApi, function (d) {
 
             agk = d.Cotacao[0].AGK[0][6].Value.substring(0, 4).replace(',', '.');
+            
             spmundi = d.Cotacao[1].SPMUNDI[0][7].Value.replace(',', '.');
 
             $('#agk_euro_value').html(
